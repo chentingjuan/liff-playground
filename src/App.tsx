@@ -4,6 +4,8 @@ import styles from './App.module.css'
 import Header from './components/Header'
 import Snippet from './components/Snippet'
 import Input from './components/Input'
+import VConsole from 'vconsole'
+const vConsole = new VConsole()
 
 function App() {
   let isLoggedIn = false
@@ -12,6 +14,7 @@ function App() {
   } catch (e) {
     console.log(e)
   }
+
   return (
     <>
       <Header />
